@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "author": "John Smith",
+      "title": "Blog Post Number 1",
+      "image": "https://www.theminimalists.com/wp-content/uploads/2019/01/how-to-start-a-blog-in-2020.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "likes": 12
+    },
+    {
+      "id": 2,
+      "author": "Mike Jones",
+      "title": "This is a Blog Post",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFsv_nvY7IAU4UPP6I_RWSZtYuYO6526z4sKX_g5LjQ&usqp=CAU&ec=48600112",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "likes": 15
+    },
+    {
+      "id": 3,
+      "author": "Jenna Jenkins",
+      "title": "Posting a Blog",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjCD79ugFNppzU5ov5R5pwAuBIQhZtkh7lQZ4ZTGlmg&usqp=CAU&ec=48600112",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "likes": 44
+    }
+  ]
+}
