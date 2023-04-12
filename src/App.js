@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 import NavBar from './NavBar'
 import Home from './Home'
-import Recents from './Recents'
+import BlogContainer from './BlogContainer'
 import Post from './Post'
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
        <NavBar />
       <Switch>
         <Route exact path="/recents">
-          <Recents blogs={blogs} handlePlusLike={handlePlusLike}/>
+          <BlogContainer blogs={blogs} handlePlusLike={handlePlusLike}/>
         </Route>
         <Route exact path="/post">
           <Post onAddItem={handleAddPost}/>

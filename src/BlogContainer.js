@@ -1,6 +1,6 @@
 import BlogCards from './BlogCards'
 
-function Recents({ blogs, handlePlusLike }) {
+function BlogContainer({ blogs, handlePlusLike }) {
     
     return (
         <div>
@@ -11,4 +11,4 @@ function Recents({ blogs, handlePlusLike }) {
     )
 }
 
-export default Recents
+export default BlogContainer
