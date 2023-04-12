@@ -64,7 +64,7 @@ function Post({ onAddItem}) {
       name="content"
       style={{ width: "400px", height: "200px" }}
        
-      value={formData.prompt} 
+      value={formData.content} 
       onChange={handleChange}/><br></br>
       
       <button type="submit">Submit</button>
