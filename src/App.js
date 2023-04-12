@@ -31,7 +31,7 @@ function App() {
     <div className='App'>
        <NavBar />
       <Switch>
-        <Route exact path="/recents">
+        <Route exact path="/blogs">
           <BlogContainer blogs={blogs} handlePlusLike={handlePlusLike}/>
         </Route>
         <Route exact path="/post">
