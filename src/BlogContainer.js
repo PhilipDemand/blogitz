@@ -1,11 +1,11 @@
-import BlogCards from './BlogCards'
+import BlogCard from './BlogCard'
 
 function BlogContainer({ blogs, handlePlusLike }) {
     
     return (
         <div>
             {blogs.map(blogObj => (
-                <BlogCards key={blogObj.id} blogObj={blogObj} handlePlusLike={handlePlusLike}/>
+                <BlogCard key={blogObj.id} blogObj={blogObj} handlePlusLike={handlePlusLike}/>
             ))}
         </div>
     )

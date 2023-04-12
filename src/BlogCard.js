@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BlogCards({ blogObj, handlePlusLike }) {
+function BlogCard({ blogObj, handlePlusLike }) {
     
     function handleLikeFetch() {
         fetch(`http://localhost:4000/blogs/${blogObj.id}`, {
@@ -31,4 +31,4 @@ function sendPlusLike() {
     )
 }
 
-export default BlogCards
+export default BlogCard
