@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 import NavBar from './NavBar'
 import Home from './Home'
-import BlogContainer from './BlogContainer'
 import Post from './Post'
 
 function App() {
@@ -31,14 +30,11 @@ function App() {
     <div className='App'>
        <NavBar />
       <Switch>
-        <Route exact path="/blogs">
-          <BlogContainer blogs={blogs} handlePlusLike={handlePlusLike}/>
-        </Route>
         <Route exact path="/post">
           <Post onAddItem={handleAddPost}/>
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home blogs={blogs} handlePlusLike={handlePlusLike}/>
         </Route>
       </Switch>
     </div>
