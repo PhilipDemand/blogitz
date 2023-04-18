@@ -19,11 +19,26 @@ function Post({ onAddItem}) {
   function handleSubmit(event) {
     event.preventDefault();
 
+    const options = {
+      timeZone: 'America/New_york',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+    };
+    
+    const formatter = new Intl.DateTimeFormat('en-US', options);
+    const dateTimeString = formatter.format(new Date());
+    
+
     const obj = {
       author: formData.author,
       title: formData.title,
       image: formData.image,
       content: formData.content,
+      timeStamp: dateTimeString,
       likes: 0
     }
 

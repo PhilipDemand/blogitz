@@ -25,6 +25,7 @@ function sendPlusLike() {
             <h2>{blogObj.title}</h2>
             <img src={blogObj.image} alt="Entry" width="100" height="100"></img>
             <h3>Author: {blogObj.author}</h3>
+            <h4>Submitted: {blogObj.timeStamp}</h4>
             <p>{blogObj.content}</p>
             <button onClick={sendPlusLike}>👍🏻{blogObj.likes}</button>
         </div>

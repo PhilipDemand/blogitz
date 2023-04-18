@@ -4,7 +4,7 @@ function BlogContainer({ blogs, handlePlusLike }) {
     
     return (
         <div>
-            {blogs.map(blogObj => (
+            {blogs.reverse().map(blogObj => (
                 <BlogCard key={blogObj.id} blogObj={blogObj} handlePlusLike={handlePlusLike}/>
             ))}
         </div>
