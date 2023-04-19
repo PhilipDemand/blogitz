@@ -6,7 +6,7 @@ function Login({ showForm }) {
                 <label>
                     username:
                     <input name="username" />
-                </label>
+                </label><br></br>
                 <label>
                     password:
                     <input 
