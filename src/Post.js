@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
+import Login from "./Login"
 
 function Post({ onAddItem}) {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  function showForm(event) {
+    event.preventDefault();
+    setIsLoggedIn(!isLoggedIn)
+  }
 
   const [formData, setFormData] = useState({
     author: "",
@@ -55,7 +63,8 @@ function Post({ onAddItem}) {
 
   return (
     <div className="card">
-    <form onSubmit={handleSubmit}>
+      <Login showForm={showForm}/>
+    {isLoggedIn ? <form onSubmit={handleSubmit}>
       Author:<input 
       type="text" 
       name="author" 
@@ -83,7 +92,7 @@ function Post({ onAddItem}) {
       onChange={handleChange}/><br></br>
       
       <button type="submit">Submit</button>
-    </form>
+    </form> : null}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './NavBar'
 import Home from './Home'
 import Post from './Post'
+import About from './About'
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
       <Switch>
         <Route exact path="/post">
           <Post onAddItem={handleAddPost}/>
+        </Route>
+        <Route exact path="/about">
+          <About />
         </Route>
         <Route exact path="/">
           <Home blogs={blogs} handlePlusLike={handlePlusLike}/>
