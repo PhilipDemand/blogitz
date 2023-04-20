@@ -86,7 +86,7 @@ function Post({ onAddItem}) {
       Your Blog Entry:<input 
       type="text" 
       name="content"
-      style={{ width: "400px", height: "200px" }}
+      style={{ width: "80%", height: "200px" }}
        
       value={formData.content} 
       onChange={handleChange}/><br></br>
