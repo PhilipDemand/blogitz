@@ -11,7 +11,7 @@ function Home({ blogs, handlePlusLike }) {
     
     const filteredArray = blogs.filter(entry => entry.likes >= atLeastLikes)
     
-      const sortedArray = filteredArray.sort((a, b) => b.id - a.id);
+    const sortedArray = filteredArray.sort((a, b) => b.id - a.id);
  
     return (
         <div>
