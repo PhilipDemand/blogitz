@@ -1,9 +1,14 @@
+import { Redirect, useHistory } from 'react-router-dom';
 import React, { useState } from 'react';
 import Login from "./Login"
 
 function Post({ onAddItem}) {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const [redirectTo, setRedirectTo] = useState(null);
+  
+  const history = useHistory();
 
   function showForm(event) {
     event.preventDefault();
@@ -25,6 +30,8 @@ function Post({ onAddItem}) {
   }
 
   function handleSubmit(event) {
+    setRedirectTo('/');
+
     event.preventDefault();
 
     const options = {
@@ -40,7 +47,6 @@ function Post({ onAddItem}) {
     const formatter = new Intl.DateTimeFormat('en-US', options);
     const dateTimeString = formatter.format(new Date());
     
-
     const obj = {
       author: formData.author,
       title: formData.title,
@@ -60,6 +66,10 @@ function Post({ onAddItem}) {
       .then((r) => r.json())
       .then((newItem) => onAddItem(newItem));
   }
+
+  if (redirectTo) {
+    return <Redirect to={redirectTo} />;
+  } 
 
   return (
     <div className="card">
