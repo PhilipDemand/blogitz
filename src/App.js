@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 import NavBar from './NavBar'
 import Home from './Home'
-import Post from './Post'
+import NewPost from './NewPost'
 import About from './About'
 
 function App() {
@@ -31,13 +31,13 @@ function App() {
     <div className='App'>
        <NavBar />
       <Switch>
-        <Route exact path="/post">
-          <Post onAddItem={handleAddPost}/>
+        <Route path="/post">
+          <NewPost onAddItem={handleAddPost}/>
         </Route>
-        <Route exact path="/about">
+        <Route path="/about">
           <About />
         </Route>
-        <Route exact path="/">
+        <Route path="/">
           <Home blogs={blogs} handlePlusLike={handlePlusLike}/>
         </Route>
       </Switch>

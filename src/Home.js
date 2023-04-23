@@ -1,11 +1,6 @@
 import BlogCard from './BlogCard'
 
 function Home({ blogs, handlePlusLike }) {
-
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-      };
     
     const sortedArray = blogs.sort((a, b) => b.id - a.id);
  

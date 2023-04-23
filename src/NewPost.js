@@ -2,7 +2,7 @@ import { Redirect, useHistory } from 'react-router-dom';
 import React, { useState } from 'react';
 import Login from "./Login"
 
-function Post({ onAddItem}) {
+function NewPost({ onAddItem}) {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
@@ -107,4 +107,4 @@ function Post({ onAddItem}) {
   );
 }
 
-export default Post
+export default NewPost
