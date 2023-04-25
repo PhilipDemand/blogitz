@@ -31,7 +31,7 @@ function App() {
     <div className='App'>
        <NavBar />
       <Switch>
-        <Route path="/post">
+        <Route path="/new-post">
           <NewPost onAddItem={handleAddPost}/>
         </Route>
         <Route path="/about">

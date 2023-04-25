@@ -30,22 +30,33 @@ function NewPost({ onAddItem}) {
   }
 
   function handleSubmit(event) {
+    event.preventDefault();
+    
     setRedirectTo('/');
 
-    event.preventDefault();
+    const currentDate = new Date();
 
-    const options = {
-      timeZone: 'America/New_york',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric'
-    };
+    const year = currentDate.getFullYear();
+    const month = ("0" + (currentDate.getMonth() + 1)).slice(-2);
+    const day = ("0" + currentDate.getDate()).slice(-2);
+    const hours = ("0" + currentDate.getHours()).slice(-2);
+    const minutes = ("0" + currentDate.getMinutes()).slice(-2);
+    const seconds = ("0" + currentDate.getSeconds()).slice(-2);
+
+    const dateTimeString = `${year}${month}${day}${hours}${minutes}${seconds}`
     
-    const formatter = new Intl.DateTimeFormat('en-US', options);
-    const dateTimeString = formatter.format(new Date());
+    // const options = {
+    //   timeZone: 'America/New_york',
+    //   year: 'numeric',
+    //   month: 'long',
+    //   day: 'numeric',
+    //   hour: 'numeric',
+    //   minute: 'numeric',
+    //   second: 'numeric'
+    // };
+    
+    // const formatter = new Intl.DateTimeFormat('en-US', options);
+    // const dateTimeString = formatter.format(new Date());
     
     const obj = {
       author: formData.author,
