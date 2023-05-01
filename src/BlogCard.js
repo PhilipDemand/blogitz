@@ -67,14 +67,15 @@ function createStampMessage(string) {
     const halfOfDay = antiPost(hour)
   
     function attachSuffix(num) {
-    if (num === 1 || num === 21 || num === 31) {
-      return num + "st";
-    } else if (num === 2 || num === 22) {
-      return num + "nd";
-    } else if (num === 3 || num === 23) {
-      return num + "rd";
+      const parsedNum = parseInt(num)
+    if (parsedNum === 1 || parsedNum === 21 || parsedNum === 31) {
+      return parsedNum + "st";
+    } else if (parsedNum === 2 || parsedNum === 22) {
+      return parsedNum + "nd";
+    } else if (parsedNum === 3 || parsedNum === 23) {
+      return parsedNum + "rd";
     } else {
-      return num + "th";
+      return parsedNum + "th";
     }
   }
     const dayWithSuffix = attachSuffix(day)

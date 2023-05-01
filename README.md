@@ -12,5 +12,5 @@ Once logged-in, you can enter your name, a title of your blog post, the URL of a
 
 ## About
 
-PLease visit us on social media.  In this section, you can view our Facebook, Twitter, and Instagram accounts.
+PLease visit us on social media.  In this section, you can view links to our Facebook, Twitter, and Instagram accounts.
 

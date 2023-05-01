@@ -45,19 +45,6 @@ function NewPost({ onAddItem}) {
 
     const dateTimeString = `${year}${month}${day}${hours}${minutes}${seconds}`
     
-    // const options = {
-    //   timeZone: 'America/New_york',
-    //   year: 'numeric',
-    //   month: 'long',
-    //   day: 'numeric',
-    //   hour: 'numeric',
-    //   minute: 'numeric',
-    //   second: 'numeric'
-    // };
-    
-    // const formatter = new Intl.DateTimeFormat('en-US', options);
-    // const dateTimeString = formatter.format(new Date());
-    
     const obj = {
       author: formData.author,
       title: formData.title,
